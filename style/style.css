@@ -1,0 +1,471 @@
+/************************************************ Font ************************************************/
+@font-face{
+    font-family: 'tinosr';
+    src:url(../Font/Tinos/Tinos-Regular.ttf) format(truetype);
+    
+  }
+  
+  @font-face{
+    font-family: 'tinosb';
+    src:url(../Font/Tinos/Tinos-Bold.ttf) format(truetype);
+    
+  }
+  @font-face {
+    font-family: 'newsreader';
+    src: url(../Font/Newsreader/Newsreader-VariableFont_opsz\,wght.ttf) format(truetype);
+  }
+  /************************************************ Header/Navigation Bar ************************************************/
+nav {
+    margin: 0%;
+    z-index: 1000;
+    position: fixed;
+    }
+    nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #ffffff;
+    border: 1px solid #37805A;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+    
+    nav li {
+    float: left;
+    }
+    
+    nav li a {
+    display: block;
+    color: #37805A;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'newsreader';
+    }
+    a:hover {
+    background-color: #37805A;
+    color: #ffffff;
+    }
+    a:active {
+    background-color: #37805A;
+    color: white;
+    }
+    
+    .navlogo {
+      width: 50px;
+    }
+
+    /************************************************ Grid ************************************************/
+
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        padding: 10px;
+        padding-top: 47px;
+      }
+      
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+      }
+/************************************************ Body ************************************************/
+p {
+    color: #37805A;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'tinosr';
+  }
+  h1 {
+    font-size: 250%;
+    font-family: 'tinosb';
+    color: #37805A;
+    text-align: center;
+  }
+  h2 {
+  font-size: 150%;
+  font-family: 'tinosb';  
+  color: #37805A;
+  text-align: center;
+  }
+
+/************************************************ HOMEPAGE ************************************************/
+
+/************************************************ Incredible Picture ************************************************/
+
+.item1 {
+grid-column: 1 / 12;
+grid-row: 1;
+}
+
+.item1 > img {
+    border-radius: 20px;
+}
+    
+/************************************************ Problem ************************************************/
+
+.item2 {
+grid-column: 1/6;
+grid-row: 2;
+}
+
+/************************************************ Solution ************************************************/
+
+.item3 {
+grid-column: 6/12;
+grid-row: 2;
+
+
+}
+.grid-container > .item3 {
+    background-color: #37805A;
+    border-radius: 20px;
+    
+}
+.item3 > p {
+    color: #ffffff;
+}
+
+/************************************************ Video THE ************************************************/
+
+.item4 {
+    grid-column: 1/12;
+    grid-row: 3;  
+}
+.item4 > video {
+    border-radius: 20px;
+}
+
+
+/************************************************ Contact Button ************************************************/
+
+    .item5 {
+        grid-column: 1/12;
+        grid-row: 4;  
+    }
+    .grid-container > .item5 {
+        background-color: #E8CC31;
+        color: #ffffff;
+        margin-left: 30%;
+        margin-right: 30%;
+        border-radius: 20px;
+        padding-top: 0,5%;
+        margin-bottom: 3%;
+    }
+
+    .item5 a:hover  {
+        color: #1e4832;
+        background-color: #E8CC31;
+        }
+    .item5 a:active  {
+    background-color: #37805A;
+    color: white;
+    }
+    
+    .item5 a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+/************************************************ Branding Visual Identity ************************************************/
+
+    .item6 {
+        grid-column: 1/6;
+        grid-row: 5/6;  
+    }
+    .grid-container > .item6 > div {
+        background-color: #37805A;
+        border-radius: 20px;
+        padding: 19px;
+    }
+    .item6 > div > h1, h2 {
+        color: #ffffff;
+    }
+    .item6 > ul > li {
+        text-align: left;
+        color: #37805A;
+    }
+
+  
+
+/************************************************ Project button ************************************************/
+
+   .projectbutton {
+    background-color: #E8CC31;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 3%;
+    padding-left: 17%;
+    padding-right: 17%;
+    margin-top: 200%;
+    text-decoration: none;
+}
+.projectbutton a:hover  {
+    color: #1e4832;
+    background-color: #E8CC31;
+    }
+.projectbutton a:active  {
+background-color: #37805A;
+color: white;
+}
+
+.projectbutton a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/************************************************ Square pictures ************************************************/
+
+.hppicture1 {
+    grid-column: 7/12;
+    grid-row: 5; 
+}
+
+.hppicture1 > img {
+    border-radius: 20px;
+}
+
+/************************************************ Branding Power ************************************************/
+
+.branding {
+    grid-column: 1/12;
+    grid-row: 6;
+    position: relative;
+  text-align: center;
+  color: white;
+}
+
+.branding > img {
+    border-radius: 20px;
+}
+
+.brandingtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 10%;
+}
+.brandingtext > h1 {
+    color: #ffffff;
+} 
+.brandingtext > h2 {
+    color: #ffffff;
+    margin-bottom: 20%;
+} 
+
+/************************************************ Mastering Editorial ************************************************/
+
+.masteredition {
+    grid-column: 1/6;
+    grid-row: 7;
+    position: relative;
+  text-align: center;
+  color: #37805A;
+}
+
+.masteredition > .brandingtext > h1 {
+    color: #37805A;
+}
+
+/************************************************ Mastering Editorial text ************************************************/
+
+.mastereditionyxtright {
+    grid-column: 6/12;
+    grid-row: 7;
+    text-align: left;
+}
+.mastereditionyxtright > h2, p {
+    text-align: left;
+    color: #37805A;
+}
+.mastereditionyxtright > p {
+    text-align: left;
+    color: #37805A;
+}
+/************************************************ Banner Transforming ************************************************/
+
+.bannerreality {
+    grid-column: 1/12;
+    grid-row: 8;
+}
+.bannerreality > img {
+    border-radius: 20px;
+}
+
+/************************************************ Software Coding ************************************************/
+
+.softwarecoding {
+    grid-column: 1/4;
+    grid-row: 9; 
+}
+.softwarecoding > h1 {
+    background-color: #37805A;
+    border-radius: 20px;
+    padding: 19px;
+    margin-top: 0%;
+    color: #ffffff;
+}
+
+/************************************************ Software Coding ************************************************/
+.middleendpicture {
+    grid-column: 4/8;
+    grid-row: 9; 
+}
+
+.middleendpicture> img {
+    border-radius: 20px;
+}
+
+/************************************************ Soft skills text ************************************************/
+.softskillstext {
+    grid-column: 8/12;
+    grid-row: 9;
+    margin-right: 10%;
+}
+.softskillstext > h1 {
+    background-color: #37805A;
+    border-radius: 20px;
+    padding: 19px;
+    margin-top: 0%;
+    color: #ffffff;
+}
+.softskillstext > h2,p {
+    color: #37805A;
+    text-align: center;
+}
+
+/************************************************ Project button End Homepage ************************************************/
+
+.oneendprojectbutton {
+    grid-column: 1/12;
+    grid-row: 10;
+}
+/************************************************ FOOTER ************************************************/
+/************************************************ Footer Grid ************************************************/
+.footer-container {
+    display: grid;
+}
+/************************************************ Footer Left ************************************************/
+footer {
+    background-color: #37805A;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info, .footer-contact, .footer-nav {
+    flex: 1;
+}
+
+.footer-logo {
+    width: 80px;
+    border-radius: 10px;
+}
+
+.icon {
+    width: 25px;
+    margin-right: 8px;
+}
+
+.footer-contact p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.footer-nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+}
+.footer-container > p {
+    color: #ffffff;
+}
+
+.footerlist {
+    list-style-type: none;
+    text-align: left;
+}
+.footer-info > p {
+    color: #ffffff;
+    font-size: 12px;
+}
+.black-li-footer {
+    color: black;
+    font-size: 25px;
+    text-align: left;
+}
+/************************************************ PROJECTS PAGE ************************************************/
+/************************************************ MW ************************************************/
+.project-logo-mw {
+    grid-column: 1/12;
+    grid-row: 1;
+}
+
+/************************************************ Edition ************************************************/
+
+.edition-title {
+    grid-column: 1/12;
+    grid-row: 1;
+}
+.grid-container > .edition-title > h1 {
+    background-color: #37805A;
+    border-radius: 20px;
+    padding: 19px;
+}
+.edition-title > h1 {
+    color: #ffffff;
+}
+
+/************************************************ Picture Button ************************************************/
+
+.project-pictures {
+    grid-column: 1/12;
+    grid-row: 2;
+}
+.project-contact-button {
+    grid-column: 1/12;
+    grid-row: 3;
+}
+/************************************************ ABOUT ************************************************/
+/************************************************ Text ************************************************/
+.aboutme-text {
+    grid-column: 1/6;
+    grid-row: 1;
+    margin-top: 10%;
+}
+.aboutme-text > div {
+    background-color: #37805A;
+    border-radius: 20px;
+    padding: 19px;
+}
+.aboutme-text > div > p, h1 {
+    color: #ffffff;
+}
+/************************************************ Profile Picture ************************************************/
+
+.placeprofilepicture {
+    grid-column: 6/12;
+    margin-top: 22%;
+    z-index: -1;
+  }
+  .profilepicture {
+    width: 50%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 7px double #E8CC31;
+  }
