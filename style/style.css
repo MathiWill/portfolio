@@ -56,7 +56,7 @@ nav {
     }
 
     /************************************************ Grid ************************************************/
-
+    
     .grid-container {
         display: grid;
         gap: 10px;
@@ -70,21 +70,24 @@ nav {
         padding: 20px;
         font-size: 30px;
       }
+      * {
+        box-sizing: border-box;
+      }
 /************************************************ Body ************************************************/
 p {
     color: #37805A;
     text-align: center;
-    font-size: 36px;
+    font-size: 26px;
     font-family: 'tinosr';
   }
   h1 {
-    font-size: 250%;
+    font-size: 50px;
     font-family: 'tinosb';
     color: #37805A;
     text-align: center;
   }
   h2 {
-  font-size: 150%;
+  font-size: 40px;
   font-family: 'tinosb';  
   color: #37805A;
   text-align: center;
@@ -106,16 +109,19 @@ grid-row: 1;
 /************************************************ Problem ************************************************/
 
 .item2 {
-grid-column: 1/6;
+grid-column: 1/4;
 grid-row: 2;
+}
+.item2 > p {
+  color: #37805A;
+  text-align: center;
 }
 
 /************************************************ Solution ************************************************/
 
 .item3 {
-grid-column: 6/12;
+grid-column: 4/12;
 grid-row: 2;
-
 
 }
 .grid-container > .item3 {
@@ -125,6 +131,7 @@ grid-row: 2;
 }
 .item3 > p {
     color: #ffffff;
+    text-align: center;
 }
 
 /************************************************ Video THE ************************************************/
@@ -171,8 +178,8 @@ grid-row: 2;
 /************************************************ Branding Visual Identity ************************************************/
 
     .item6 {
-        grid-column: 1/6;
-        grid-row: 5/6;  
+        grid-column: 1/4;
+        grid-row: 5/6; 
     }
     .grid-container > .item6 > div {
         background-color: #37805A;
@@ -218,7 +225,7 @@ color: white;
 /************************************************ Square pictures ************************************************/
 
 .hppicture1 {
-    grid-column: 7/12;
+    grid-column: 4/12;
     grid-row: 5; 
 }
 
@@ -249,6 +256,7 @@ color: white;
 }
 .brandingtext > h1 {
     color: #ffffff;
+    padding-top: 70px;
 } 
 .brandingtext > h2 {
     color: #ffffff;
@@ -258,21 +266,26 @@ color: white;
 /************************************************ Mastering Editorial ************************************************/
 
 .masteredition {
-    grid-column: 1/6;
+    grid-column: 1/4;
     grid-row: 7;
     position: relative;
   text-align: center;
   color: #37805A;
 }
-
+.brandingtext {
+  padding: 40px;
+}
 .masteredition > .brandingtext > h1 {
     color: #37805A;
+}
+.mastereditionyxtright > h3 {
+  text-align: left;
 }
 
 /************************************************ Mastering Editorial text ************************************************/
 
 .mastereditionyxtright {
-    grid-column: 6/12;
+    grid-column: 4/12;
     grid-row: 7;
     text-align: left;
 }
@@ -297,10 +310,10 @@ color: white;
 /************************************************ Software Coding ************************************************/
 
 .softwarecoding {
-    grid-column: 1/4;
+    grid-column: 1/3;
     grid-row: 9; 
 }
-.softwarecoding > h1 {
+.softwarecoding > h2 {
     background-color: #37805A;
     border-radius: 20px;
     padding: 19px;
@@ -310,7 +323,7 @@ color: white;
 
 /************************************************ Software Coding ************************************************/
 .middleendpicture {
-    grid-column: 4/8;
+    grid-column: 3/5;
     grid-row: 9; 
 }
 
@@ -320,22 +333,25 @@ color: white;
 
 /************************************************ Soft skills text ************************************************/
 .softskillstext {
-    grid-column: 8/12;
+    grid-column: 5/12;
     grid-row: 9;
     margin-right: 10%;
 }
-.softskillstext > h1 {
+.softskillstext > h2 {
     background-color: #37805A;
     border-radius: 20px;
     padding: 19px;
     margin-top: 0%;
     color: #ffffff;
 }
-.softskillstext > h2,p {
+.softskillstext > h3 {
     color: #37805A;
     text-align: center;
 }
-
+.softskillstext > p {
+  color: #37805A;
+  text-align: center;
+}
 /************************************************ Project button End Homepage ************************************************/
 
 .oneendprojectbutton {
@@ -402,6 +418,7 @@ footer {
 .footer-info > p {
     color: #ffffff;
     font-size: 12px;
+    text-align: center;
 }
 .black-li-footer {
     color: black;
@@ -459,13 +476,432 @@ footer {
 
 .placeprofilepicture {
     grid-column: 6/12;
+    grid-row: 1;
     margin-top: 22%;
     z-index: -1;
   }
   .profilepicture {
-    width: 50%;
+    width: 55%;
     display:block;
     margin-left: auto;
     margin-right: auto;
     border: 7px double #E8CC31;
+  }
+  .about-project-button-description {
+    grid-column: 1/12;
+    grid-row: 2;
+  }
+  /************************************************ Soft Skills Text ************************************************/
+.softskills-text {
+    grid-column: 1/6;
+    grid-row: 3;
+}
+.softskills-text > div {
+    background-color: #37805A;
+    border-radius: 20px;
+    padding: 19px;
+    padding-bottom: 34px;
+    color: #ffffff;
+}
+.softskills-text > div > ul > li {
+    text-align: left;
+    font-family: 'tinosr';
+    font-size: 26px;
+}
+  /************************************************ Soft Skills Picture ************************************************/
+
+.soft-skills-picture {
+    grid-column: 6/12;
+    grid-row: 3;
+}
+.soft-skills-picture > img {
+    border-radius: 20px;
+}
+  /************************************************ Languages Text ************************************************/
+  .languages-text {
+    grid-column: 6/12;
+    grid-row: 4;
+  }
+.languages-text  > div {
+    background-color: #ffffff;
+    border: #37805A 1px solid;
+    color: #37805A;
+    border-radius: 20px;
+    padding: 19px;
+    padding-bottom: 118px;
+}
+.languages-text > div > ul >li {
+  text-align: left;
+  font-family: 'tinosr';
+  font-size: 26px;
+}
+.languages-text > div > h2 {
+    text-align: center;
+    color: #37805A;
+}
+  /************************************************ Languages Pictures ************************************************/
+  .languages-picture {
+    grid-column: 1/6;
+    grid-row: 4;
+}
+.languages-picture > img {
+    border-radius: 20px;
+}
+/************************************************ technical Text ************************************************/
+.technical-skills-text {
+    grid-column: 1/6;
+    grid-row: 5;
+}
+.technical-skills-text > div {
+    background-color: #37805A;
+    border-radius: 20px;
+    padding: 19px;
+    padding-bottom: 60px;
+    color: #ffffff;
+}
+.technical-skills-text > div > ul > li {
+    text-align: left;
+    font-family: 'tinosr';
+    font-size: 26px;
+}
+  /************************************************ technical Picture ************************************************/
+
+.technical-skills-picture {
+    grid-column: 6/12;
+    grid-row: 5;
+}
+.technical-skills-picture > img {
+    border-radius: 20px;
+}
+
+  /************************************************ About Contact bBtton Picture ************************************************/
+
+.banner-about-contact-button {
+    grid-column: 1/12;
+    grid-row: 6;
+    position: relative;
+}
+
+.banner-about-contact-button > img {
+    border-radius: 20px;
+}
+  /************************************************ About Contact Button on Banner ************************************************/
+  .bannercontactbutton {
+    background-color: #ffffff;
+    color: #E8CC31;
+    border-radius: 20px;
+    padding: 3%;
+    padding-left: 17%;
+    padding-right: 17%;
+    text-decoration: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.bannercontactbutton a:hover  {
+    color: #1e4832;
+    background-color: #E8CC31;
+    }
+.bannercontactbutton a:active  {
+background-color: #37805A;
+color: white;
+}
+
+.bannercontactbutton a {
+    color: #E8CC31;
+    text-decoration: none;
+}
+
+/************************************************ TIMELINE ************************************************/
+.timeline > h2, p {
+    color: #E8CC31;
+    font-family: 'tinosb';
+  
+  }
+  .timeline {
+    grid-column: 1/12;
+    grid-row: 7;
+    position: relative;
+    max-width: 1200px;
+    margin-left: 7% ;
+    margin-right: 7%;
+    font-family: 'tinosb';
+    margin-top: 10%;
+    z-index: -1;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #E8CC31;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    
+  }
+  
+  /* Container around content */
+  .containertimeline {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .containertimeline::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: rgb(253, 251, 251);
+    border: 4px solid #E8CC31;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid rgb(255, 255, 255);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #37805A;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #37805A transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .timelinecontent {
+    padding: 20px 30px;
+    color: white;
+    background-color: #37805A;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .containertimeline {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .containertimeline::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+  }
+  .fie {
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  /************************************************ Contact ************************************************/
+  .contact-banner-grid {
+    grid-column: 1/12;
+    grid-row: 1;
+    margin-top: 10px;
+  }
+  .contact-banner {
+    border-radius: 20px;
+  }
+  .contact-text {
+    grid-column: 1/12;
+    grid-row: 2;
+  }
+  .contact-text > h1 {
+    color: #37805A;
+    text-align: left;
+    margin-top: 0px;
+  }
+  .contact-email {
+    grid-column: 1/4;
+    grid-row: 3;
+  }
+  .contact-phone {
+    grid-column: 4/8;
+    grid-row: 3;
+  }
+  .contact-sm {
+    grid-column: 8/12;
+    grid-row: 3;
+  }
+ .contact-phone > h2 {
+  color: white;
+  background-color: #37805A;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: left;
+  }
+  .contact-email > h2 {
+    color: white;
+    background-color: #37805A;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: left;
+  }
+  .contact-sm > h2 {
+    color: white;
+    background-color: #37805A;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: left;
+  }
+  .contact-email > p {
+    color: black;
+    text-align: left;
+  }
+  .contact-phone > p {
+    color: black;
+    text-align: left;
+  }
+.contact-sm > p {
+    color: black;
+    text-align: left;
+  }
+  .socialmedia {
+    color:black;
+    text-decoration: none;
+  }
+/************************************************ Button ************************************************/
+
+  .oneendprojectbutton-contact {
+    grid-column: 1/12;
+    grid-row: 4;
+  }
+
+/************************************************ Q&A ************************************************/
+
+  .QA-title {
+    grid-column: 1/12;
+    grid-row: 5;
+  }
+  .QA-title > h1 {
+    background-color: #37805A;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .qa-q1 {
+    grid-column: 1/5;
+    grid-row: 6;
+    
+  }
+  .qa-q1-bg {
+    background-color: #37805A;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+  }
+  h3 {
+    color: #E8CC31;
+    font-size: 30px;
+  }
+  .qa-q1-bg > p {
+    color: #ffffff;
+    font-size: 18px;
+  }
+
+
+  .qa-q2 {
+    grid-column: 6/12;
+    grid-row: 6;
+  }
+  .qa-q2-bg {
+    background-color: #37805A;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+  }
+  .qa-q2-bg > p {
+    color: #ffffff;
+    font-size: 18px;
+  }
+
+
+  .qa-q3 {
+    grid-column: 1/5;
+    grid-row: 7;
+  }
+  .qa-q3-bg {
+    background-color: #37805A;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+  }
+  .qa-q3-bg > p {
+    color: #ffffff;
+    font-size: 18px;
+  }
+
+
+  .qa-q4 {
+    grid-column: 6/12;
+    grid-row: 7;
+  }
+  .qa-q4-bg {
+    background-color: #37805A;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+  }
+  .qa-q4-bg > p {
+    color: #ffffff;
+    font-size: 18px;
   }
