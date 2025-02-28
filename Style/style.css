@@ -1,19 +1,16 @@
 /************************************************ Font ************************************************/
 @font-face{
-    font-family: 'tinosr';
+    font-family: 'Tinos-Regular';
     src:url(../Font/Tinos/Tinos-Regular.ttf) format(truetype);
     
   }
   
   @font-face{
-    font-family: 'tinosb';
-    src:url(../Font/Tinos/Tinos-Bold.ttf) format(truetype);
+    font-family: 'GowunDodum-Regular';
+    src:url(../Font/Gowun_Dodum/GowunDodum-Regular.ttf) format(truetype);
     
   }
-  @font-face {
-    font-family: 'newsreader';
-    src: url(../Font/Newsreader/Newsreader-VariableFont_opsz\,wght.ttf) format(truetype);
-  }
+
   /************************************************ Header/Navigation Bar ************************************************/
 nav {
     margin: 0%;
@@ -40,7 +37,8 @@ nav {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: 'newsreader';
+    font-family: 'Tinos-Regular';
+    font-size: 28px;
     }
     a:hover {
     background-color: #37805A;
@@ -52,7 +50,7 @@ nav {
     }
     
     .navlogo {
-      width: 50px;
+      width: 70px;
     }
 
     /************************************************ Grid ************************************************/
@@ -78,17 +76,17 @@ p {
     color: #37805A;
     text-align: center;
     font-size: 26px;
-    font-family: 'tinosr';
+    font-family: 'GowunDodum-Regular';
   }
   h1 {
     font-size: 50px;
-    font-family: 'tinosb';
+    font-family: 'Tinos-Regular';
     color: #37805A;
     text-align: center;
   }
   h2 {
   font-size: 40px;
-  font-family: 'tinosb';  
+  font-family: 'Tinos-Regular';  
   color: #37805A;
   text-align: center;
   }
@@ -104,6 +102,7 @@ grid-row: 1;
 
 .item1 > img {
     border-radius: 20px;
+    margin-top: 50px;
 }
     
 /************************************************ Problem ************************************************/
@@ -114,7 +113,7 @@ grid-row: 2;
 }
 .item2 > p {
   color: #37805A;
-  text-align: center;
+  text-align: left;
 }
 
 /************************************************ Solution ************************************************/
@@ -131,7 +130,7 @@ grid-row: 2;
 }
 .item3 > p {
     color: #ffffff;
-    text-align: center;
+    text-align: left;
 }
 
 /************************************************ Video THE ************************************************/
@@ -192,6 +191,7 @@ grid-row: 2;
     .item6 > ul > li {
         text-align: left;
         color: #37805A;
+        font-family: 'GowunDodum-Regular';
     }
 
   .item6 > ul {
@@ -352,7 +352,7 @@ color: white;
 }
 .softskillstext > p {
   color: #37805A;
-  text-align: center;
+  text-align: left;
 }
 /************************************************ Project button End Homepage ************************************************/
 
@@ -507,7 +507,7 @@ footer {
 }
 .softskills-text > div > ul > li {
     text-align: left;
-    font-family: 'tinosr';
+    font-family: 'GowunDodum-Regular';
     font-size: 26px;
 }
   /************************************************ Soft Skills Picture ************************************************/
@@ -534,7 +534,7 @@ footer {
 }
 .languages-text > div > ul >li {
   text-align: left;
-  font-family: 'tinosr';
+  font-family: 'GowunDodum-Regular';
   font-size: 26px;
 }
 .languages-text > div > h2 {
@@ -563,7 +563,7 @@ footer {
 }
 .technical-skills-text > div > ul > li {
     text-align: left;
-    font-family: 'tinosr';
+    font-family: 'GowunDodum-Regular';
     font-size: 26px;
 }
   /************************************************ technical Picture ************************************************/
@@ -616,7 +616,7 @@ color: white;
 /************************************************ TIMELINE ************************************************/
 .timeline > h2, p {
     color: #E8CC31;
-    font-family: 'tinosb';
+    font-family: 'GowunDodum-Regular';
   
   }
   .timeline {
@@ -626,7 +626,7 @@ color: white;
     max-width: 1200px;
     margin-left: 7% ;
     margin-right: 7%;
-    font-family: 'tinosb';
+    font-family: 'GowunDodum-Regular';
     margin-top: 10%;
     z-index: -1;
   }
