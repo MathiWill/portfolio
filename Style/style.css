@@ -6,8 +6,8 @@
   }
   
   @font-face{
-    font-family: 'GowunDodum-Regular';
-    src:url(../Font/Gowun_Dodum/GowunDodum-Regular.ttf) format(truetype);
+    font-family: 'Karla';
+    src:url(../Font/Karla/Karla-VariableFont_wght.ttf) format(truetype);
     
   }
 
@@ -76,7 +76,7 @@ p {
     color: #37805A;
     text-align: center;
     font-size: 26px;
-    font-family: 'GowunDodum-Regular';
+    font-family: 'Karla';
   }
   h1 {
     font-size: 50px;
@@ -191,7 +191,7 @@ grid-row: 2;
     .item6 > ul > li {
         text-align: left;
         color: #37805A;
-        font-family: 'GowunDodum-Regular';
+        font-family: 'Karla';
     }
 
   .item6 > ul {
@@ -507,7 +507,7 @@ footer {
 }
 .softskills-text > div > ul > li {
     text-align: left;
-    font-family: 'GowunDodum-Regular';
+    font-family: 'Karla';
     font-size: 26px;
 }
   /************************************************ Soft Skills Picture ************************************************/
@@ -534,7 +534,7 @@ footer {
 }
 .languages-text > div > ul >li {
   text-align: left;
-  font-family: 'GowunDodum-Regular';
+  font-family: 'Karla';
   font-size: 26px;
 }
 .languages-text > div > h2 {
@@ -563,7 +563,7 @@ footer {
 }
 .technical-skills-text > div > ul > li {
     text-align: left;
-    font-family: 'GowunDodum-Regular';
+    font-family: 'Karla';
     font-size: 26px;
 }
   /************************************************ technical Picture ************************************************/
@@ -616,7 +616,7 @@ color: white;
 /************************************************ TIMELINE ************************************************/
 .timeline > h2, p {
     color: #E8CC31;
-    font-family: 'GowunDodum-Regular';
+    font-family: 'Karla';
   
   }
   .timeline {
@@ -626,7 +626,7 @@ color: white;
     max-width: 1200px;
     margin-left: 7% ;
     margin-right: 7%;
-    font-family: 'GowunDodum-Regular';
+    font-family: 'Karla';
     margin-top: 10%;
     z-index: -1;
   }
